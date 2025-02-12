@@ -1,0 +1,81 @@
+:root { 
+    --theme-color: #f44336;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    /* background-color: var(--theme-color); */
+}
+
+nav .container-fluid .navbar-toggler {
+    border: none;
+}
+
+nav .container-fluid .offcanvas {
+    background-color: #ffffff;
+}
+
+nav .container-fluid .offcanvas-header {
+    border-bottom: 1px solid #ddd;
+}
+
+nav .container-fluid .offcanvas-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--theme-color);
+    font-size: 24px;
+}
+
+nav .container-fluid .offcanvas-body {
+    padding: 1rem;
+}
+
+nav .container-fluid .offcanvas-body .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    height: 3.5px;
+    left: 0;
+    bottom: 10px;
+    width: 0;
+    background-color: var(--theme-color);
+    transition: width 0.2s;
+}
+
+nav .container-fluid .offcanvas-body .navbar-nav .nav-item .nav-link:hover:after {
+    width: 100%;
+}
+
+nav .container-fluid .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+    color: var(--theme-color);
+}
+
+nav .container-fluid .offcanvas-body form {
+    background-color: #f1f1f1;
+    border-radius: 16px;
+}
+
+nav .container-fluid .offcanvas-body form .form-control {
+    border: none;
+    background-color: transparent;
+    border-radius: 16px;
+}
+
+nav .container-fluid .offcanvas-body form .btn img {
+    background-color: var(--theme-color);
+    padding: 5px;
+    border-radius: 16px;
+}
+
+nav .container-fluid .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--theme-color);
+}
